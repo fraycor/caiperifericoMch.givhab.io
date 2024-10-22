@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAI periférico para Mochuelo Bajo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        section p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-gallery img {
+            max-width: 48%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CAI PERIFERICO</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="planos del cai">Plamos del CAI</a>
+    </nav>
+
+
+    <div class="container">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Hola y bienvenidos a la página web oficial del proyecto propuesto para la implementación del CAI en la vereda de Mochuelo Bajo.
+                En esta página encontrarás toda la información relacionada con este proyecto, desde los planos hasta el informe escrito utilizado para su realización, el cual fue expuesto en la Cátedra Mutis del año 2024.
+                </p>
+        </section>
+
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <p>Nosotros somos egresados de la línea de formación en Dibujo Arquitectónico del Colegio Rural José Celestino Mutis.
+                Somos los encargados de la realización de este proyecto, el cual fue presentado en la Cátedra Mutis del año 2024.
+                <br>
+                Integrantes:
+                <br>
+                Adrián Muñoz.
+                <br>
+                Andrés Acero
+                <br>
+                Juan Huertas
+                </p>
+        </section>
+
+        <section id="video">
+            <h2>Video de Presentación</h2>
+            <video width="100%" controls>
+                <source src="img/video cai.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+        
+        <section id="galeria" class="image-gallery">
+            <h2>Galería de Imágenes</h2>
+            <img src="img/cai render portada.jpeg" alt="Cai">
+            <img src="img/cai posterior.png" alt="Descripción de la imagen 2">
+            <img src="img/CAI ARRIBA.jpg" alt="Descripción de la imagen 3">
+            <img src="img/CAI REALISTA.jpg" alt="Descripción de la imagen 4">
+        </section>
+        <section id="planos del cai" class="image-gallery1">
+            <h2>Informe del Proyecto</h2>
+            <embed src="inf/PLANTA 1 Y 2.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/PLANTA 3 Y 4.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/CORTES.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/FACHADAS F1.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/FACHADA F2 Y F3.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/ISOMETRICO Y AZOLAMIENTO.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/ISOMETRICOS DE CORTES.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/ISOMETRICOS DE VENTAS.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/ISOMETRICOS TERRENO.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/ISOMETRICOS Y AZOLAMIENTO.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/PLANO DE VENTAS Y ZONIFICACION.pdf" type="application/pdf" width="100%" height="600px">
+            <embed src="inf/VENTAS Y ZONIFICACIONES.pdf" type="application/pdf" width="100%" height="600px">
+            <!-- Si el navegador no puede mostrar el PDF -->
+            <p>Tu navegador no puede mostrar el PDF. <a href="informe.pdf" target="_blank">Haz clic aquí para descargar el informe.</a></p>
+        </section>
+                
+        
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Pendiente....</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Cai periférico. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
